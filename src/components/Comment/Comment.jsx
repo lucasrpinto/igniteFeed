@@ -3,11 +3,12 @@ import perfilUser from '../../assets/perfilUser.png'
 import comment2 from '../../assets/comment2.png'
 import comment3 from '../../assets/comment3.png'
 import { ThumbsUp, Trash } from 'phosphor-react'
+import { Avatar } from '../Avatar/Avatar'
 
 export function Comment() {
    return (
       <div className={styles.comment}> 
-         <img src={perfilUser}  />
+         <Avatar hasBorder={false} src={perfilUser}  />
 
          <div className={styles.commentBox}>
             <div className={styles.commentContent}>

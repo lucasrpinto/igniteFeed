@@ -2,13 +2,14 @@ import styles from './Post.module.css'
 import perfil1 from '../../assets/perfil1.png'
 import perfil2 from '../../assets/perfil2.png'
 import { Comment, Comment2, Comment3 } from '../Comment/Comment'
+import { Avatar } from '../Avatar/Avatar'
 
 export function Post() {
    return (
       <article className={styles.post}>
          <header>
             <div className={styles.author}>
-               <img  src={perfil1} />
+               <Avatar hasBorder src={perfil1} />
                <div className={styles.authorInfo}>
                   <strong>Jane Cooper</strong>
                   <span>Dev Front-End</span>
@@ -53,7 +54,7 @@ export function Post2() {
       <article className={styles.post}>
          <header>
             <div className={styles.author}>
-               <img  src={perfil2} />
+               <Avatar src={perfil2} />
                <div className={styles.authorInfo}>
                   <strong>Devon Lane</strong>
                   <span>Dev Front-End</span>
